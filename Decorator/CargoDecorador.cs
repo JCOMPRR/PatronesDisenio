@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Decorator
+﻿namespace Decorator
 {
-    public class CargoDecorador: VentaDecorador
+    public class CargoDecorador : VentaDecorador
     {
         private decimal _importeCargo;
         public CargoDecorador(IVenta venta, decimal importeCargo)
-            :base(venta)
+            : base(venta)
         {
             _importeCargo = importeCargo;
         }

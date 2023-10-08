@@ -1,10 +1,9 @@
-﻿namespace Adapter
+﻿namespace PuntoDeVenta
 {
-    internal class Ventas
+    public class VentasAdapter
     {
-        private readonly IPago _pago;
-
-        public Ventas(IPago pago)
+        private readonly IPagoPV _pago;
+        public VentasAdapter(IPagoPV pago)
         {
             _pago = pago;
         }
@@ -13,6 +12,5 @@
         {
             _pago.Cobrar();
         }
-
     }
 }
