@@ -13,8 +13,8 @@ producto.Precio = 80m;
 
 Console.WriteLine($"El descuento que se aplico es del: {producto.Descuento / producto.Precio}%");
 
-//Decorator
 
+//Decorator
 List<string> productos = new List<string>()
 {
     "Nieve, ", "Canela y ", "Oreo"
